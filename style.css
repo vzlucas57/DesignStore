@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+ol, ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav {
+font-family: 'Poppins', sans-serif;
+}
+
+li {
+font-size: 17px;
+font-family: 'Poppins', sans-serif;
+display: inline-block;
+color: #000000;
+}
+
+li:hover {
+color: #8E83D1;
+transition: 0.5s;
+}
+
+a {
+text-decoration: none;
+color: #ffffff;
+}
+
+
+#cabeca {
+	background-color:#E3DCF2; 
+	width:100%; 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#logo {
+	background-color:#E3DCF2; 
+  margin-left: 1em;
+}
+
+#menu {
+	background-color:#E3DCF2;
+	width: 100%;
+	margin-right: 1em;
+}
+
+#corpo {
+	background-color:#ADB2E9; 
+	width:100%; 
+	height:750px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: auto;
+	align-items: center;
+}
+
+#corpo img {
+  margin-left: 2em;
+}
+
+#rodape {
+	background-color:#E3DCF2;
+  color: #000000;
+	width:100%; 
+	height:100px;
+	padding:8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub1 h2 {
+	color: #ffffff;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.sub1 h2 span {
+  color: #6D53A6;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+}
+
+.sub1 p {
+	color: #ffffff;
+  margin: 20px 20% 0 0;
+  text-align: justify;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.interface h2 {
+	color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.interface h2 span {
+  color: #6D53A6;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* ESTILO DO CONTATO */
+
+.contato {
+  background-color:#ADB2E9; 
+	width:100%; 
+	height:80vh;
+  padding: 20px 0;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #242424;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #6D53A6;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+/* ESTILO PAG INVESTIMENTO */
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #ADB2E9;
+	padding: 20px;
+	height:750px;
+}
+
+.image-box {
+	width: 18%;
+	background-color: lightgray;
+	margin: 10px;
+	text-align: center;
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.gallery .image-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #000000;
+}
+
+
+.image-box img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ESTILO SOBRE */
+
+.nossaempresa {
+  background-color: #ADB2E9;
+	width:100%; 
+	height:80vh;
+  padding: 20px 0;
+}
+
+.titulo {
+  margin: 8px 0
+}
+
+.nossaempresa .flex {
+  display: flex;
+  justify-content: center;
+  height:750px;
+  align-items: center;
+  gap: 64px;
+  margin: 0 64px;
+}
+
+.nossaempresa .nossaempresa-box {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+}
+
+.nossaempresa .nossaempresa-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #000000;
+}
+
+.nossaempresa .nossaempresa-box i {
+  font-size: 70px;
+  color: #6D53A6
+}
+
+.nossaempresa .nossaempresa-box h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  margin: 15px 0;
+}
